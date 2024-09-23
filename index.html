@@ -4,89 +4,95 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
     <title>A VIDA DE UM MALANDRO</title>
 </head>
 <body>
 <main>
+    <!-- Cenário inicial -->
     <div class="passo ativo" id="passo-0">
-        <img src="cenario-passo0.jpeg" alt="Cenário do Passo 0">
+        <img src="cenario-passo0.jpeg" alt="Homem se preparando para curtir a vida">
         <p>UM HOMEM DECIDE CURTIR A VIDA</p>
         <button class="btn-proximo" data-proximo="1">VAI PARA A BALADA DA CIDADE</button>
         <button class="btn-proximo" data-proximo="2">VAI PARA O BAILE DA DZ7</button>
     </div>
 
-    <!-- Baile da cidade -->
+    <!-- Balada da cidade -->
     <div class="passo" id="passo-1">
-        <p>AO CHEGAR LÁ, ENCONTRA UMA MULHER MUITO LINDA</p>
+        <img src="baile-cidade.jpg" alt="Balada cheia de luzes">
+        <p>AO CHEGAR NO BAILE DA CIDADE, O HOMI ENCONTRA UMA MULHER MUITO LINDA</p>
         <button class="btn-proximo" data-proximo="3">FALAR COM ELA</button>
-        <button class="btn-proximo" data-proximo="4">DEIXAR DE CANTO</button>
-    </div>
-
-    <div class="passo" id="passo-3">
-        <p>O HOMEM TROCA UM PAPO COM A MULHER, ELES SE ENCONTRAM ALGUMAS VEZES, E APÓS 4 MESES DESCOBREM QUE A MULHER ESTÁ GRÁVIDA. QUAL O MELHOR NOME PARA DAR AO FILHO?</p>
-        <button class="btn-proximo" data-proximo="9">JAIR MESSIAS BOLSONARO DA SILVA SANTOS JR</button>
-        <button class="btn-proximo" data-proximo="10">RENAN NEGRO DRAMA DA SILVA PINTO</button>
-    </div>
-
-    <div class="passo" id="passo-4">
-        <p>O HOMEM FICA DE CANTO E, NÃO ENCONTRANDO NADA INTERESSANTE, DECIDE VOLTAR PARA CASA. NO CAMINHO, ELE PARA NO BK PARA UM LANCHE.</p>
-        <button class="btn-proximo" data-proximo="14">FIM</button>
+        <button class="btn-proximo" data-proximo="4">FICAR DE CANTO</button>
     </div>
 
     <!-- Baile da DZ7 -->
     <div class="passo" id="passo-2">
-        <p>ESTAVA EM UM LUGAR QUE NÃO CONHECIA NINGUÉM</p>
+        <img src="baile-dz7.jpg" alt="Festa em rua com pessoas dançando">
+        <p>NO BAILE DA DZ7, O HOMI CHEGA, MAS NÃO CONHECE NINGUÉM</p>
         <button class="btn-proximo" data-proximo="5">PROCURAR ALGUÉM PRA TROCAR IDEIA</button>
-        <button class="btn-proximo" data-proximo="6">IR EMBORA PARA O CAFOFO</button>
+        <button class="btn-proximo" data-proximo="6">IR EMBORA PRO CAFOFO</button>
     </div>
 
+    <!-- Encontro com a mulher -->
+    <div class="passo" id="passo-3">
+        <img src="casal-encontro.jpg" alt="Homem e mulher conversando">
+        <p>ELE FALA COM A MULHER, E ELES SE ENCONTRAM VÁRIAS VEZES. APÓS 4 MESES, ELA FICA GRÁVIDA. MAIS 5 MESES PASSAM, E É UM MENINO. QUAL O NOME?</p>
+        <button class="btn-proximo" data-proximo="11">JAIR MESSIAS BOLSONARO DA SILVA SANTOS JR</button>
+        <button class="btn-proximo" data-proximo="12">RENAN NEGRO DRAMA DA SILVA PINTO</button>
+    </div>
+
+    <!-- Ficar de canto -->
+    <div class="passo" id="passo-4">
+        <img src="homem-sozinho.jpg" alt="Homem de canto observando">
+        <p>O HOMI FICA DE CANTO, SEM TROCAR MUITA IDEIA, E ACABA INDO EMBORA PRO CAFOFO</p>
+    </div>
+
+    <!-- Conversa no baile da DZ7 e encontro com o dono da boca -->
     <div class="passo" id="passo-5">
-        <p>ACABOU TROMBANDO O DONO DA BOCA, QUE NÃO GOSTOU NADA DELE, E TENTOU DAR UM TIRO DE 762 NO HOMI</p>
-        <button class="btn-proximo" data-proximo="7">O HOMI DESARMA O DONO DA BOCA</button>
-        <button class="btn-proximo" data-proximo="8">O HOMI TOMA UM TIRO NOS MIOLO</button>
+        <img src="encontro-dono-da-boca.jpg" alt="Conversa tensa com alguém perigoso">
+        <p>AO TROCAR IDEIA, O HOMI ENCONTRA O DONO DA BOCA, QUE NÃO CURTE A FIRMAÇÃO DELE E TENTA DAR UM TIRO DE 762</p>
+        <button class="btn-proximo" data-proximo="7">DESARMAR O DONO DA BOCA</button>
+        <button class="btn-proximo" data-proximo="8">TOMAR UM TIRO NOS MIOLO</button>
     </div>
 
+    <!-- Indo embora após a festa -->
     <div class="passo" id="passo-6">
-        <p>O HOMEM DECIDE IR EMBORA E, NO CAMINHO, PARA NO BK PARA COMER O NOVO LANCHE DO DEADPOOL. DEPOIS, ELE VAI PARA CASA.</p>
-        <button class="btn-proximo" data-proximo="14">FIM</button>
+        <img src="bk-lanche.jpg" alt="Lanche no Burger King">
+        <p>O HOMI FICA CANSADO DO BAILE E DECIDE IR EMBORA, PARANDO NO BK PRA COMER ALGO</p>
     </div>
 
+    <!-- Desarmar o dono da boca -->
     <div class="passo" id="passo-7">
-        <p>O DONO DA BOCA VIU QUE O HOMEM ERA BOM NOS BAGULHO E DECIDIU CONTRATÁ-LO PARA UM CARGO SUPERIOR NA BOCA DO JEFERSON. AGORA, O HOMEM TEM UMA VIDA DE LUXO E RESPEITO.</p>
-        <button class="btn-proximo" data-proximo="14">FIM</button>
+        <img src="desarma.jpg" alt="Momento dramático desarmando alguém">
+        <p>O HOMI DESARMA O DONO DA BOCA, QUE VÊ POTENCIAL NELE E O CONTRATA PRO CARGO SUPERIOR NA BOCA DO JEFERSON. ELE GANHA A VIDA NO BAGULHO</p>
     </div>
 
+    <!-- Tomar um tiro -->
     <div class="passo" id="passo-8">
-        <p>O HOMEM LEVA UM TIRO NOS MIOLO, MAS SOBREVIVE. ELE PODE FAZER VINGANÇA OU IR EMBORA.</p>
-        <button class="btn-proximo" data-proximo="11">VINGANÇA</button>
-        <button class="btn-proximo" data-proximo="6">IR EMBORA</button>
+        <img src="tiro.jpg" alt="Homem sendo atingido, mas sobrevive">
+        <p>O HOMI TOMA UM TIRO, MAS ELE É IMORTAL. ELE TEM A CHANCE DE SE VINGAR OU IR EMBORA</p>
+        <button class="btn-proximo" data-proximo="9">VINGANÇA</button>
+        <button class="btn-proximo" data-proximo="6">IR PRO CAFOFO</button>
     </div>
 
-    <div class="passo" id="passo-11">
-        <p>O HOMEM VAI ATRÁS DO DONO DA BOCA E CONSEGUE SE VINGAR. ELE SE TORNA UMA LENDA NO BAIRRO.</p>
-        <button class="btn-proximo" data-proximo="14">FIM</button>
-    </div>
-
-    <!-- Futuros dos filhos -->
+    <!-- Vingança, mas preguiça vence -->
     <div class="passo" id="passo-9">
-        <p>COM O NOME JAIR MESSIAS BOLSONARO DA SILVA SANTOS JR, O FILHO DELES SE TORNOU O MAIOR JOGADOR DE FUTEBOL DO MUNDO, MARCANDO 10.000 GOLS E DANDO 6.000 ASSISTÊNCIAS NA CARREIRA. AO SE APOSENTAR, COM 46 ANOS, ELE SE TORNA O MAIOR PRESIDENTE QUE O BRASIL JÁ TEVE, ELEVANDO O PIB EM 150% E TRANSFORMANDO O PAÍS NA MAIOR POTÊNCIA MUNDIAL.</p>
-        <button class="btn-proximo" data-proximo="14">FIM</button>
+        <img src="bk-vinganca.jpg" alt="Homem comendo no BK">
+        <p>O HOMI VAI ATRÁS DO DONO DA BOCA, MAS FICA COM PREGUIÇA. ELE PARA NO BK, COME, FICA DE BARRIGA CHEIA, E DECIDE VOLTAR PRA CASA</p>
     </div>
 
-    <div class="passo" id="passo-10">
-        <p>COM O NOME RENAN NEGRO DRAMA DA SILVA PINTO, O FILHO DELES SE TORNA O MAIOR CANTOR DO MUNDO. CONQUISTA 30 BILHÕES DE VISUALIZAÇÕES EM SUAS MÚSICAS E ENCANTA O MUNDO COM SEU CARISMA E "NEGO DOCE" ESTILO, SE TORNANDO UMA LENDA GLOBAL DA MÚSICA.</p>
-        <button class="btn-proximo" data-proximo="14">FIM</button>
+    <!-- Futuro: Jair Messias jogador e presidente -->
+    <div class="passo" id="passo-11">
+        <img src="jogador.jpg" alt="Jogador de futebol triunfante">
+        <p>COM O NOME JAIR MESSIAS BOLSONARO DA SILVA SANTOS JR, O FILHO DELES SE TORNA O MAIOR JOGADOR DE FUTEBOL DO MUNDO, COM 8754 GOLS E 5972 ASSISTÊNCIAS. DEPOIS, ELE VIRA PRESIDENTE, DEIXA O PIB EM 0,99% E TORNA O BRASIL UMA POTÊNCIA MUNDIAL</p>
     </div>
 
-    <div class="passo" id="passo-14">
-        <p>OBRIGADO POR JOGAR! A VIDA DE UM MALANDRO É CHEIA DE SURPRESAS!</p>
-        <button class="btn-proximo" data-proximo="0">RECOMEÇAR</button>
+    <!-- Futuro: Renan como cantor -->
+    <div class="passo" id="passo-12">
+        <img src="cantor.jpg" alt="Cantor famoso no palco">
+        <p>COM O NOME RENAN NEGRO DRAMA DA SILVA PINTO, O FILHO DELES CONQUISTA O MUNDO COM SUA PASSADA DE NEGO DOCE E CARISMA. ELE SE TORNA O MAIOR CANTOR DO MUNDO, COM 30 BILHÕES DE VISUALIZAÇÕES</p>
     </div>
 </main>
 
-<script src="script.js"></script>
+<script src="script.js"></script>   
 </body>
 </html>
