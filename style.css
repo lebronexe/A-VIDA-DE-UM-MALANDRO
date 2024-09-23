@@ -10,6 +10,11 @@ body {
     padding: 0;
 }
 
+h1 {
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
 button {
     background-color: #e7f33c;
     color: rgb(0, 0, 0);
@@ -52,5 +57,5 @@ p {
 }
 
 button + button {
-    margin-left: 10px;
+    margin-left: 10px;
 }
